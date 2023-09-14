@@ -4,10 +4,10 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.Random;
-import java.util.stream.IntStream;
+
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
-import org.testng.Assert;
+
 
 import com.pages.RegistrationPage;
 import com.qa.factory.DriverFactory;
@@ -19,7 +19,7 @@ import io.cucumber.java.en.When;
 
 public class RegistrationSteps {
 
-	private RegistrationPage registrationPage = new RegistrationPage(DriverFactory.getDriver());
+	private final RegistrationPage registrationPage = new RegistrationPage(DriverFactory.getDriver());
 
 	@Given("user navigates to Registration page")
 	public void user_navigates_to_Registration_page() {
@@ -71,13 +71,11 @@ public class RegistrationSteps {
 			Thread.sleep(5000000);
 
 	}
-	
-	@Then("Verify_the_username_retrieve_the_same")
-	public void Verify_the_username_retrieve_the_same(){
-		
+
+
+	@Then("Verify the username retrieve the same")
+	public void verifyTheUsernameRetrieveTheSame() {
 		String username=registrationPage.getusernameafterLogin();
 		System.out.println("username is :"+username);
-		
 	}
-
 }
