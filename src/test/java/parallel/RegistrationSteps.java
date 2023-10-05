@@ -31,7 +31,7 @@ public class RegistrationSteps {
 			throws InvalidFormatException, IOException {
 
 		ExcelReader reader = new ExcelReader();
-		List<Map<String, String>> testData = reader.getData("C:\\Users\\SWAPNIL\\Desktop\\TestData.xlsx", sheetName);
+		List<Map<String, String>> testData = reader.getData("C:\\Users\\Prime\\Desktop\\TestData.xlsx", sheetName);
 
 		String firstname = testData.get(rowNumber).get("firstname");
 		String lastname = testData.get(rowNumber).get("lastname");
@@ -39,7 +39,7 @@ public class RegistrationSteps {
 		String city = testData.get(rowNumber).get("city");
 		String state = testData.get(rowNumber).get("state");
 		String zipcode = testData.get(rowNumber).get("zipcode");
-		String phoneno = testData.get(rowNumber).get("phoneno");
+		String phone = testData.get(rowNumber).get("phone");
 		String SSN = testData.get(rowNumber).get("SSN");
 		String username = testData.get(rowNumber).get("username");
 		String password = testData.get(rowNumber).get("password");
@@ -56,7 +56,7 @@ public class RegistrationSteps {
 		registrationPage.enterCity(city);
 		registrationPage.enterState(state);
 		registrationPage.enterZipcode(zipcode);
-		registrationPage.enterPhoneNumber(phoneno);
+		registrationPage.enterPhoneNumber(phone);
 		registrationPage.enterSsn(SSN);
 		registrationPage.enterUsername(username_new);
 		registrationPage.enterPassword(password);
@@ -65,10 +65,10 @@ public class RegistrationSteps {
 	}
 
 	@When("user clicks on Register button")
-	public void user_clicks_on_Register_button() throws InterruptedException {
+	public void user_clicks_on_Register_button() {
 		registrationPage.clickOnRegister();
 
-			Thread.sleep(5000000);
+
 
 	}
 

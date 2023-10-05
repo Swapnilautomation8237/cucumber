@@ -84,9 +84,8 @@ public class RegistrationPage {
 
 	public String getusernameafterLogin() {
 		
-		String usernamechar[]=driver.findElement(usernamefetch).getText().split(" ");
-		String username= usernamechar[1];
-		
-		return username;
+		String [] usernamechar=driver.findElement(usernamefetch).getText().split(" ");
+
+        return usernamechar[1];
 	}
 }
