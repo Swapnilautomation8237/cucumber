@@ -31,7 +31,7 @@ public class RegistrationSteps {
 			throws InvalidFormatException, IOException {
 
 		ExcelReader reader = new ExcelReader();
-		List<Map<String, String>> testData = reader.getData("C:\\Users\\SWAPNIL\\Desktop\\TestData.xlsx", sheetName);
+		List<Map<String, String>> testData = reader.getData("C:\\Users\\prime\\Desktop\\TestData.xlsx", sheetName);
 
 		String firstname = testData.get(rowNumber).get("firstname");
 		String lastname = testData.get(rowNumber).get("lastname");
@@ -68,7 +68,7 @@ public class RegistrationSteps {
 	public void user_clicks_on_Register_button() throws InterruptedException {
 		registrationPage.clickOnRegister();
 
-			Thread.sleep(5000000);
+			Thread.sleep(50);
 
 	}
 
