@@ -41,7 +41,7 @@ public class RegistrationSteps {
 		String city = testData.get(rowNumber).get("city");
 		String state = testData.get(rowNumber).get("state");
 		String zipcode = testData.get(rowNumber).get("zipcode");
-		String phone = testData.get(rowNumber).get("phone");
+		String phone = testData.get(rowNumber).get("phoneno");
 		String SSN = testData.get(rowNumber).get("SSN");
 		String username = testData.get(rowNumber).get("username");
 		String password = testData.get(rowNumber).get("password");
