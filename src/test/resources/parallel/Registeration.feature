@@ -9,4 +9,4 @@ Feature: Registration Feature
     Examples: 
       | SheetName    | RowNumber |
       | Registration |         0 |
-      #| Registration |         1 |
+      | Registration |         1 |
