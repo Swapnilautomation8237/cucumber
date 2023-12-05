@@ -10,3 +10,6 @@ Feature: Registration Feature
       | SheetName    | RowNumber |
       | Registration |         0 |
       | Registration |         1 |
+      | Registration |         2|
+
+
