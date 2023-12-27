@@ -17,10 +17,7 @@ public class ConfigReader {
 		try {
 			FileInputStream ip = new FileInputStream("./src/test/resources/config/config.properties");
 			prop.load(ip);
-			System.out.println();
-			System.out.println();
-			FileInputStream ip2 = new FileInputStream("./src/test/resources/config/config.properties");
-			prop.load(ip2);
+			System.out.println("merge resolved");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
