@@ -17,7 +17,9 @@ public class ConfigReader {
 		try {
 			FileInputStream ip = new FileInputStream("./src/test/resources/config/config.properties");
 			prop.load(ip);
-
+			System.out.println("hello");
+			FileInputStream ip1 = new FileInputStream("./src/test/resources/config/config.properties");
+			prop.load(ip1);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
