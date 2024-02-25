@@ -13,7 +13,7 @@ import io.cucumber.testng.CucumberOptions;
 		monochrome = true,
 				dryRun = true,
 		glue = { "parallel" },
-		features = { "src/test/resources/parallel" }
+		features = { "src/test/resources/parallel/124124" }
 )
 
 public class ParallelRun extends AbstractTestNGCucumberTests {
